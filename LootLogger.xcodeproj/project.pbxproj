@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		681C5D30261C5BD800506E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C5D2F261C5BD800506E85 /* AppDelegate.swift */; };
 		681C5D32261C5BD800506E85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C5D31261C5BD800506E85 /* SceneDelegate.swift */; };
-		681C5D34261C5BD800506E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C5D33261C5BD800506E85 /* ViewController.swift */; };
 		681C5D37261C5BD800506E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681C5D35261C5BD800506E85 /* Main.storyboard */; };
 		681C5D39261C5BD900506E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681C5D38261C5BD900506E85 /* Assets.xcassets */; };
 		681C5D3C261C5BD900506E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681C5D3A261C5BD900506E85 /* LaunchScreen.storyboard */; };
+		681C5D45261C5C0200506E85 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C5D44261C5C0200506E85 /* ItemViewController.swift */; };
+		681C5D49261C5CEE00506E85 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C5D48261C5CEE00506E85 /* Item.swift */; };
+		681C5D4C261C5DE600506E85 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C5D4B261C5DE600506E85 /* ItemStore.swift */; };
+		68765630262601EE00DA6C6B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6876562F262601EE00DA6C6B /* DetailViewController.swift */; };
+		687656342626758700DA6C6B /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687656332626758600DA6C6B /* DateViewController.swift */; };
+		68A4996E261E3D5D00B68B98 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4996D261E3D5D00B68B98 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		681C5D2C261C5BD800506E85 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		681C5D2F261C5BD800506E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		681C5D31261C5BD800506E85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		681C5D33261C5BD800506E85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		681C5D36261C5BD800506E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		681C5D38261C5BD900506E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		681C5D3B261C5BD900506E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		681C5D3D261C5BD900506E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681C5D44261C5C0200506E85 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		681C5D48261C5CEE00506E85 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		681C5D4B261C5DE600506E85 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		6876562F262601EE00DA6C6B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		687656332626758600DA6C6B /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		68A4996D261E3D5D00B68B98 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				681C5D2F261C5BD800506E85 /* AppDelegate.swift */,
 				681C5D31261C5BD800506E85 /* SceneDelegate.swift */,
-				681C5D33261C5BD800506E85 /* ViewController.swift */,
 				681C5D35261C5BD800506E85 /* Main.storyboard */,
+				687656332626758600DA6C6B /* DateViewController.swift */,
+				6876562F262601EE00DA6C6B /* DetailViewController.swift */,
+				681C5D4B261C5DE600506E85 /* ItemStore.swift */,
+				681C5D48261C5CEE00506E85 /* Item.swift */,
+				681C5D44261C5C0200506E85 /* ItemViewController.swift */,
+				68A4996D261E3D5D00B68B98 /* ItemCell.swift */,
 				681C5D38261C5BD900506E85 /* Assets.xcassets */,
 				681C5D3A261C5BD900506E85 /* LaunchScreen.storyboard */,
 				681C5D3D261C5BD900506E85 /* Info.plist */,
@@ -137,9 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681C5D34261C5BD800506E85 /* ViewController.swift in Sources */,
+				687656342626758700DA6C6B /* DateViewController.swift in Sources */,
+				681C5D49261C5CEE00506E85 /* Item.swift in Sources */,
+				681C5D45261C5C0200506E85 /* ItemViewController.swift in Sources */,
+				68A4996E261E3D5D00B68B98 /* ItemCell.swift in Sources */,
 				681C5D30261C5BD800506E85 /* AppDelegate.swift in Sources */,
+				681C5D4C261C5DE600506E85 /* ItemStore.swift in Sources */,
 				681C5D32261C5BD800506E85 /* SceneDelegate.swift in Sources */,
+				68765630262601EE00DA6C6B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +306,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6Z8LB7962;
 				INFOPLIST_FILE = LootLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = infinno.LootLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +327,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6Z8LB7962;
 				INFOPLIST_FILE = LootLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +337,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = infinno.LootLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
