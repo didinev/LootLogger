@@ -18,6 +18,7 @@
 		68765630262601EE00DA6C6B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6876562F262601EE00DA6C6B /* DetailViewController.swift */; };
 		687656342626758700DA6C6B /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687656332626758600DA6C6B /* DateViewController.swift */; };
 		68A4996E261E3D5D00B68B98 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4996D261E3D5D00B68B98 /* ItemCell.swift */; };
+		68AA99F7264AC027008449B2 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AA99F6264AC027008449B2 /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6876562F262601EE00DA6C6B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		687656332626758600DA6C6B /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		68A4996D261E3D5D00B68B98 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		68AA99F6264AC027008449B2 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				681C5D2F261C5BD800506E85 /* AppDelegate.swift */,
 				681C5D31261C5BD800506E85 /* SceneDelegate.swift */,
+				68AA99F6264AC027008449B2 /* ImageStore.swift */,
 				681C5D35261C5BD800506E85 /* Main.storyboard */,
 				687656332626758600DA6C6B /* DateViewController.swift */,
 				6876562F262601EE00DA6C6B /* DetailViewController.swift */,
@@ -157,6 +160,7 @@
 				681C5D45261C5C0200506E85 /* ItemViewController.swift in Sources */,
 				68A4996E261E3D5D00B68B98 /* ItemCell.swift in Sources */,
 				681C5D30261C5BD800506E85 /* AppDelegate.swift in Sources */,
+				68AA99F7264AC027008449B2 /* ImageStore.swift in Sources */,
 				681C5D4C261C5DE600506E85 /* ItemStore.swift in Sources */,
 				681C5D32261C5BD800506E85 /* SceneDelegate.swift in Sources */,
 				68765630262601EE00DA6C6B /* DetailViewController.swift in Sources */,

@@ -1,7 +1,5 @@
 import UIKit
 
-
-
 class ItemStore {
     var allItems = [Item]()
     let itemArchiveURL: URL = {
@@ -76,28 +74,11 @@ class ItemStore {
             print("Error encoding allItems: \(encodingError)")
         }
     }
+    
+    func imageURL(forKey key: String) -> URL {
+        let documentsDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectory = documentsDirectories.first!
+
+        return documentDirectory.appendingPathComponent(key)
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

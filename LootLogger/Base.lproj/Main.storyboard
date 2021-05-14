@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zzo-u1-nmM">
-                                <rect key="frame" x="0.0" y="96" width="382" height="714"/>
+                                <rect key="frame" x="0.0" y="96" width="382" height="657"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FJg-ur-RPm">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -150,32 +150,48 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGE-Op-6Gv">
-                                        <rect key="frame" x="0.0" y="126" width="382" height="550"/>
+                                        <rect key="frame" x="0.0" y="125.99999999999999" width="382" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63t-Zl-SOF">
-                                        <rect key="frame" x="0.0" y="684" width="382" height="30"/>
+                                        <rect key="frame" x="0.0" y="154.33333333333334" width="382" height="30"/>
                                         <state key="normal" title="Change Date"/>
                                         <connections>
                                             <segue destination="Peh-wA-Gkh" kind="show" identifier="changeDate" id="e97-AO-5eD"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="wjh-AQ-uxx">
+                                        <rect key="frame" x="0.0" y="192.33333333333329" width="382" height="464.66666666666674"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="xcN-YJ-DV0" firstAttribute="leading" secondItem="dR1-D1-EGL" secondAttribute="leading" id="Wur-D8-EJi"/>
                                     <constraint firstItem="P7L-N3-qIF" firstAttribute="leading" secondItem="xcN-YJ-DV0" secondAttribute="leading" id="XDq-sA-kPR"/>
                                 </constraints>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kv-1q-qPR">
+                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="7ck-Pw-Exh">
+                                        <connections>
+                                            <action selector="choosePhotoSource:" destination="Bov-oD-8Sw" id="zJX-Lv-nBt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QJj-NF-H0d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="QJj-NF-H0d" firstAttribute="bottom" secondItem="Zzo-u1-nmM" secondAttribute="bottom" id="BSe-f5-UDZ"/>
+                            <constraint firstItem="6kv-1q-qPR" firstAttribute="leading" secondItem="cnS-rt-MNL" secondAttribute="leading" id="EBQ-6C-Q10"/>
                             <constraint firstItem="Zzo-u1-nmM" firstAttribute="top" secondItem="QJj-NF-H0d" secondAttribute="top" constant="8" id="EXe-Kb-ldx"/>
                             <constraint firstItem="QJj-NF-H0d" firstAttribute="trailing" secondItem="Zzo-u1-nmM" secondAttribute="trailing" constant="8" id="O4t-LS-RGI"/>
+                            <constraint firstItem="QJj-NF-H0d" firstAttribute="bottom" secondItem="6kv-1q-qPR" secondAttribute="bottom" id="Qym-wT-BmB"/>
+                            <constraint firstItem="6kv-1q-qPR" firstAttribute="top" secondItem="Zzo-u1-nmM" secondAttribute="bottom" constant="8" id="iGK-wO-gH9"/>
+                            <constraint firstAttribute="trailing" secondItem="6kv-1q-qPR" secondAttribute="trailing" id="k71-Sm-BlO"/>
                             <constraint firstItem="Zzo-u1-nmM" firstAttribute="leading" secondItem="QJj-NF-H0d" secondAttribute="leading" id="lKw-oi-Xjk"/>
                         </constraints>
                         <connections>
@@ -187,6 +203,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="qGE-Op-6Gv" id="K5V-A9-sg2"/>
+                        <outlet property="imageView" destination="wjh-AQ-uxx" id="YDO-im-Bce"/>
                         <outlet property="nameField" destination="dAL-Jm-lGa" id="NLQ-1L-OhK"/>
                         <outlet property="serialNumberField" destination="Y6i-3f-k1Z" id="EZF-pH-POh"/>
                         <outlet property="valueField" destination="nBh-O3-b11" id="6q0-JU-TrQ"/>

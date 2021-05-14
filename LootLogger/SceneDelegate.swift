@@ -8,11 +8,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        
+        let imageStore = ImageStore()
         let navController = window!.rootViewController as! UINavigationController
         let itemsController = navController.topViewController as! ItemViewController
         
         itemsController.itemStore = itemStore
+        itemsController.imageStore = imageStore
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

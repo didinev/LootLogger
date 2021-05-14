@@ -2,6 +2,7 @@ import UIKit
 
 class ItemViewController: UITableViewController {
     var itemStore: ItemStore!
+    var imageStore: ImageStore!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -55,6 +56,7 @@ class ItemViewController: UITableViewController {
         if editingStyle == .delete {
             let item = itemStore.getItem(indexPath)
             itemStore.removeItem(item)
+            imageStore.deleteImage(forKey: item.itemKey)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
